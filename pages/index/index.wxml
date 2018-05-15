@@ -1,0 +1,16 @@
+<view class="container">
+    <view class="page-body">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view wx:for="{{arr_obj}}"  wx:key="key" wx:for-index="idx" >
+            <view class="flex-item">
+                <view class="flex-image">
+                  <image src="{{item.image}}" style="width: 239rpx;height: 334rpx;" bindtap="GoToDetail" data-url="{{item.url}}">
+                    <text class="flex-desc">{{item.desc}}</text>
+                  </image>
+                </view>
+                <view class="flex-text">{{item.text}}</view>           
+            </view>
+          </view>
+        </view>
+    </view>
+</view>

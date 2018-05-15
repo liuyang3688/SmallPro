@@ -1,0 +1,4 @@
+<view wx:for="{{array}}">{{item}}</view>
+<view wx:if="{{view=='Search'}}">Search</view>
+<view wx:elif="{{view=='Review'}}">Review</view>
+<view wx:else="{{view=='Index'}}">Index</view>

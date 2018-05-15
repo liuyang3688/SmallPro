@@ -1,0 +1,29 @@
+/* pages/index/index.wxss */
+.flex-wrp{
+    margin: 10rpx;
+    display:flex;
+    flex-wrap:wrap;
+}
+.flex-item{
+    margin:0 5rpx 5rpx;
+    width: 233rpx;
+}
+.flex-image{
+    width: 239rpx;
+    height: 334rpx;
+    background-size:100%;
+    display:table-cell;
+    vertical-align:bottom;
+    font-size: 24rpx;
+    text-indent: 10rpx;
+    color: white;
+}
+.flex-desc{
+    background:#999;
+}
+.flex-text{
+    text-align:center;
+    padding:5rpx;
+    font-size: 26rpx;
+    color: #666666;
+}

@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/review/review",
+    "pages/search/search",
+    "pages/film/film"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#AECC33",
+    "navigationBarTextStyle":"black",
+    "navigationBarTitleText":"追韩剧",
+    "backgroundColor":"#DDDDDD",
+    "backgroundTextStyle":"light",
+    "enablePullDownRefresh":"true"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

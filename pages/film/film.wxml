@@ -1,0 +1,37 @@
+<view class="film">
+    <view class="film-image"><image src="{{film.image}}" style="width:750rpx;height:375rpx;"></image></view>
+    <view class="film-wr">
+        <view class="film-title">{{film.title}}</view>
+        <view class="film-detail">
+            <view wx:if="{{film.direct}}">
+                <view  class="film-detail-direct">导演: {{film.direct}}</view>
+            </view>
+            <view wx:if="{{film.writer}}">
+                <view class="film-detail-writer">编剧: {{film.writer}}</view>
+            </view>
+            <view wx:if="{{film.actors}}">
+                <view class="film-detail-actors">主演: {{film.actors}}</view>
+            </view>
+            <view wx:if="{{film.type}}">
+                <view class="film-detail-type">类型: {{film.type}}</view>
+            </view>
+            <view wx:if="{{film.lang}}">
+                <view class="film-detail-lang">语言: {{film.lang}}</view>
+            </view>
+            <view wx:if="{{film.debut}}">
+                <view class="film-detail-debut">首播: {{film.debut}}</view>
+            </view>
+            <view wx:if="{{film.series}}">
+                <view class="film-detail-series">集数: {{film.series}}</view>
+            </view>
+        </view> 
+        <view class="film-desc">{{film.desc}}</view>
+        <view class="film-link">
+            <button class="btn-link" bindtap="btnLinkTap" data-link="{{film.link}}">链接地址</button>
+            <view hidden="{{hide?true:false}}">
+                <view class="film-link-addr"><textarea class="film-link-addr-textarea" value="{{linkaddr}}"/></view>
+                <view class="film-link-tip">(点击复制链接在浏览器内打开播放)</view>
+            </view>
+        </view>  
+    </view>
+</view>
